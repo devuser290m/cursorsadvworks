@@ -14,5 +14,5 @@ BEGIN
 PRINT 'Vendor: ' + @VendorName + ' | Credit Rating: ' + CAST(@CreditRating AS NVARCHAR(10));
 FETCH NEXT FROM Cursor1 INTO @VendorName, @CreditRating;
 END
-CLOSE Cursor1;
+CLOSE Cursor1
 DEALLOCATE Cursor1;
